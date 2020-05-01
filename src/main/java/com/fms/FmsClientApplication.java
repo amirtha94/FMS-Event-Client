@@ -8,7 +8,7 @@ import org.springframework.boot.autoconfigure.security.servlet.UserDetailsServic
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 @EnableDiscoveryClient
-@SpringBootApplication()
+@SpringBootApplication
 public class FmsClientApplication {
 
 	public static void main(String[] args) {

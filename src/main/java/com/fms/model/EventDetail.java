@@ -39,15 +39,15 @@ public class EventDetail {
 	@JsonSerialize(using = LocalDateSerializer.class)
 	private LocalDate eventDate;
 	
-	private String employeeId;
+	private int employeeId;
 	
 	private String employeeName;
 	
-	private String volunteerHours;
+	private double volunteerHours;
 	
-	private String travelHours;
+	private double travelHours;
 	
-	private String livesImpacted;
+	private double livesImpacted;
 	
 	private String businessUnit;
 	

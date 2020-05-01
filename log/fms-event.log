@@ -1,0 +1,888 @@
+2020-05-01 18:02:33,410 INFO [main] o.s.c.c.c.ConfigServicePropertySourceLocator [ConfigServicePropertySourceLocator.java:249] Fetching config from server at : http://localhost:8888
+2020-05-01 18:02:35,508 INFO [main] o.s.c.c.c.ConfigServicePropertySourceLocator [ConfigServicePropertySourceLocator.java:273] Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
+2020-05-01 18:02:35,509 WARN [main] o.s.c.c.c.ConfigServicePropertySourceLocator [ConfigServicePropertySourceLocator.java:153] Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/fms-events/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+2020-05-01 18:02:35,511 INFO [main] c.f.FmsClientApplication [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2020-05-01 18:02:36,094 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:249] Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-01 18:02:36,095 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
+2020-05-01 18:02:36,135 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 36ms. Found 3 Reactive MongoDB repository interfaces.
+2020-05-01 18:02:36,138 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:249] Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-01 18:02:36,139 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-05-01 18:02:36,143 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 4ms. Found 0 MongoDB repository interfaces.
+2020-05-01 18:02:36,159 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:249] Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-01 18:02:36,160 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-05-01 18:02:36,172 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport [RepositoryConfigurationExtensionSupport.java:348] Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.fms.repository.EventDetailsRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2020-05-01 18:02:36,172 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport [RepositoryConfigurationExtensionSupport.java:348] Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.fms.repository.EventsRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2020-05-01 18:02:36,173 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport [RepositoryConfigurationExtensionSupport.java:348] Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.fms.repository.UserInfoRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2020-05-01 18:02:36,173 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 4ms. Found 0 Redis repository interfaces.
+2020-05-01 18:02:36,333 INFO [main] o.s.c.c.s.GenericScope [GenericScope.java:295] BeanFactory id=7202a5a3-5f8d-3256-b381-3e33f77c43be
+2020-05-01 18:02:36,399 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java:330] Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-01 18:02:36,400 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java:330] Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-01 18:02:36,402 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java:330] Bean 'deferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-01 18:02:36,577 INFO [main] o.m.d.cluster [SLF4JLogger.java:71] Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-05-01 18:02:36,672 INFO [cluster-ClusterId{value='5eac16e4f40c637ddcfd0375', description='null'}-localhost:27017] o.m.d.connection [SLF4JLogger.java:71] Opened connection [connectionId{localValue:1, serverValue:188}] to localhost:27017
+2020-05-01 18:02:36,676 INFO [cluster-ClusterId{value='5eac16e4f40c637ddcfd0375', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:71] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 5]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2336000}
+2020-05-01 18:02:36,924 WARN [main] o.s.d.m.c.m.BasicMongoPersistentProperty [BasicMongoPersistentProperty.java:86] Customizing field name for id property 'com.fms.model.Events.eventId' is not allowed! Custom name ('eventId') will not be considered!
+2020-05-01 18:02:36,930 WARN [main] o.s.d.m.c.m.BasicMongoPersistentProperty [BasicMongoPersistentProperty.java:86] Customizing field name for id property 'com.fms.model.pocDetails.pocId' is not allowed! Custom name ('pocId') will not be considered!
+2020-05-01 18:02:37,064 INFO [main] o.m.d.cluster [SLF4JLogger.java:71] Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-05-01 18:02:37,068 INFO [cluster-ClusterId{value='5eac16e5f40c637ddcfd0376', description='null'}-localhost:27017] o.m.d.connection [SLF4JLogger.java:71] Opened connection [connectionId{localValue:2, serverValue:189}] to localhost:27017
+2020-05-01 18:02:37,070 INFO [cluster-ClusterId{value='5eac16e5f40c637ddcfd0376', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:71] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 5]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1132900}
+2020-05-01 18:02:37,179 WARN [main] o.s.d.m.c.m.BasicMongoPersistentProperty [BasicMongoPersistentProperty.java:86] Customizing field name for id property 'com.fms.model.Events.eventId' is not allowed! Custom name ('eventId') will not be considered!
+2020-05-01 18:02:37,183 WARN [main] o.s.d.m.c.m.BasicMongoPersistentProperty [BasicMongoPersistentProperty.java:86] Customizing field name for id property 'com.fms.model.pocDetails.pocId' is not allowed! Custom name ('pocId') will not be considered!
+2020-05-01 18:02:37,205 WARN [main] c.n.c.s.URLConfigurationSource [URLConfigurationSource.java:121] No URLs will be polled as dynamic configuration sources.
+2020-05-01 18:02:37,206 INFO [main] c.n.c.s.URLConfigurationSource [URLConfigurationSource.java:122] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-05-01 18:02:37,209 WARN [main] c.n.c.s.URLConfigurationSource [URLConfigurationSource.java:121] No URLs will be polled as dynamic configuration sources.
+2020-05-01 18:02:37,209 INFO [main] c.n.c.s.URLConfigurationSource [URLConfigurationSource.java:122] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-05-01 18:02:38,315 INFO [main] o.m.d.cluster [SLF4JLogger.java:71] Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-05-01 18:02:38,316 INFO [main] o.m.d.cluster [SLF4JLogger.java:71] Adding discovered server localhost:27017 to client view of cluster
+2020-05-01 18:02:38,320 INFO [cluster-ClusterId{value='5eac16e6f40c637ddcfd0377', description='null'}-localhost:27017] o.m.d.connection [SLF4JLogger.java:71] Opened connection [connectionId{localValue:3, serverValue:190}] to localhost:27017
+2020-05-01 18:02:38,321 INFO [cluster-ClusterId{value='5eac16e6f40c637ddcfd0377', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:71] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 5]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=443700}
+2020-05-01 18:02:38,321 INFO [cluster-ClusterId{value='5eac16e6f40c637ddcfd0377', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:71] Discovered cluster type of STANDALONE
+2020-05-01 18:02:38,399 INFO [main] o.m.d.cluster [SLF4JLogger.java:71] Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-05-01 18:02:38,785 INFO [cluster-ClusterId{value='5eac16e6f40c637ddcfd0378', description='null'}-localhost:27017] o.m.d.connection [SLF4JLogger.java:71] Opened connection [connectionId{localValue:4, serverValue:191}] to localhost:27017
+2020-05-01 18:02:38,787 INFO [cluster-ClusterId{value='5eac16e6f40c637ddcfd0378', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:71] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 5]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1314500}
+2020-05-01 18:02:39,365 WARN [main] o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger [BlockingLoadBalancerClientAutoConfiguration.java:86] You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-05-01 18:02:39,372 WARN [main] o.s.c.c.l.r.ReactorLoadBalancerClientAutoConfiguration$ReactorLoadBalancerClientRibbonWarnLogger [ReactorLoadBalancerClientAutoConfiguration.java:77] You have RibbonLoadBalancerClient on your classpath. LoadBalancerExchangeFilterFunction that uses it under the hood will be used by default. Spring Cloud Ribbon is now in maintenance mode, so we suggest switching to ReactorLoadBalancerExchangeFilterFunction instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-05-01 18:02:39,429 INFO [main] o.s.c.n.e.InstanceInfoFactory [InstanceInfoFactory.java:72] Setting initial instance status as: STARTING
+2020-05-01 18:02:39,449 INFO [main] c.n.d.DiscoveryClient [DiscoveryClient.java:368] Initializing Eureka in region us-east-1
+2020-05-01 18:02:39,489 INFO [main] c.n.d.p.DiscoveryJerseyProvider [DiscoveryJerseyProvider.java:70] Using JSON encoding codec LegacyJacksonJson
+2020-05-01 18:02:39,489 INFO [main] c.n.d.p.DiscoveryJerseyProvider [DiscoveryJerseyProvider.java:71] Using JSON decoding codec LegacyJacksonJson
+2020-05-01 18:02:39,590 INFO [main] c.n.d.p.DiscoveryJerseyProvider [DiscoveryJerseyProvider.java:80] Using XML encoding codec XStreamXml
+2020-05-01 18:02:39,590 INFO [main] c.n.d.p.DiscoveryJerseyProvider [DiscoveryJerseyProvider.java:81] Using XML decoding codec XStreamXml
+2020-05-01 18:02:39,698 INFO [main] c.n.d.s.r.a.ConfigClusterResolver [ConfigClusterResolver.java:43] Resolving eureka endpoints via configuration
+2020-05-01 18:02:39,831 INFO [main] c.n.d.DiscoveryClient [DiscoveryClient.java:981] Disable delta property : false
+2020-05-01 18:02:39,832 INFO [main] c.n.d.DiscoveryClient [DiscoveryClient.java:982] Single vip registry refresh property : null
+2020-05-01 18:02:39,832 INFO [main] c.n.d.DiscoveryClient [DiscoveryClient.java:983] Force full registry fetch : false
+2020-05-01 18:02:39,832 INFO [main] c.n.d.DiscoveryClient [DiscoveryClient.java:984] Application is null : false
+2020-05-01 18:02:39,832 INFO [main] c.n.d.DiscoveryClient [DiscoveryClient.java:985] Registered Applications size is zero : true
+2020-05-01 18:02:39,832 INFO [main] c.n.d.DiscoveryClient [DiscoveryClient.java:987] Application version is -1: true
+2020-05-01 18:02:39,832 INFO [main] c.n.d.DiscoveryClient [DiscoveryClient.java:1070] Getting all instance registry info from the eureka server
+2020-05-01 18:02:39,911 INFO [main] c.n.d.DiscoveryClient [DiscoveryClient.java:1079] The response status is 200
+2020-05-01 18:02:39,913 INFO [main] c.n.d.DiscoveryClient [DiscoveryClient.java:1294] Starting heartbeat executor: renew interval is: 30
+2020-05-01 18:02:39,914 INFO [main] c.n.d.InstanceInfoReplicator [InstanceInfoReplicator.java:60] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-05-01 18:02:39,917 INFO [main] c.n.d.DiscoveryClient [DiscoveryClient.java:468] Discovery Client initialized at timestamp 1588336359916 with initial instances count: 2
+2020-05-01 18:02:39,918 INFO [main] o.s.c.n.e.s.EurekaServiceRegistry [EurekaServiceRegistry.java:41] Registering application FMS-EVENTS with eureka with status UP
+2020-05-01 18:02:39,919 INFO [main] c.n.d.DiscoveryClient [DiscoveryClient.java:1330] Saw local status change event StatusChangeEvent [timestamp=1588336359919, current=UP, previous=STARTING]
+2020-05-01 18:02:39,920 INFO [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient [DiscoveryClient.java:847] DiscoveryClient_FMS-EVENTS/DESKTOP-1QKKEMV:fms-events:8081: registering service...
+2020-05-01 18:02:40,002 INFO [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient [DiscoveryClient.java:856] DiscoveryClient_FMS-EVENTS/DESKTOP-1QKKEMV:fms-events:8081 - registration status: 204
+2020-05-01 18:02:40,023 INFO [main] o.s.b.w.e.n.NettyWebServer [NettyWebServer.java:89] Netty started on port(s): 8081
+2020-05-01 18:02:40,025 INFO [main] o.s.c.n.e.s.EurekaAutoServiceRegistration [EurekaAutoServiceRegistration.java:145] Updating port to 8081
+2020-05-01 18:02:40,380 INFO [main] c.f.FmsClientApplication [StartupInfoLogger.java:61] Started FmsClientApplication in 7.779 seconds (JVM running for 8.534)
+2020-05-01 18:05:24,150 INFO [Thread-10] o.m.d.connection [SLF4JLogger.java:71] Opened connection [connectionId{localValue:5, serverValue:192}] to localhost:27017
+2020-05-01 18:07:39,837 INFO [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver [ConfigClusterResolver.java:43] Resolving eureka endpoints via configuration
+2020-05-01 18:12:39,840 INFO [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver [ConfigClusterResolver.java:43] Resolving eureka endpoints via configuration
+2020-05-01 18:14:58,933 INFO [RMI TCP Connection(4)-127.0.0.1] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [SpringApplicationAdminMXBeanRegistrar.java:159] Application shutdown requested.
+2020-05-01 18:14:58,933 INFO [RMI TCP Connection(4)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry [EurekaServiceRegistry.java:65] Unregistering application FMS-EVENTS with eureka with status DOWN
+2020-05-01 18:14:58,934 WARN [RMI TCP Connection(4)-127.0.0.1] c.n.d.DiscoveryClient [DiscoveryClient.java:1328] Saw local status change event StatusChangeEvent [timestamp=1588337098934, current=DOWN, previous=UP]
+2020-05-01 18:14:58,934 INFO [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient [DiscoveryClient.java:847] DiscoveryClient_FMS-EVENTS/DESKTOP-1QKKEMV:fms-events:8081: registering service...
+2020-05-01 18:14:58,938 INFO [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient [DiscoveryClient.java:856] DiscoveryClient_FMS-EVENTS/DESKTOP-1QKKEMV:fms-events:8081 - registration status: 204
+2020-05-01 18:15:03,128 INFO [RMI TCP Connection(4)-127.0.0.1] c.n.d.DiscoveryClient [DiscoveryClient.java:909] Shutting down DiscoveryClient ...
+2020-05-01 18:15:06,135 INFO [RMI TCP Connection(4)-127.0.0.1] c.n.d.DiscoveryClient [DiscoveryClient.java:945] Unregistering ...
+2020-05-01 18:15:06,144 INFO [RMI TCP Connection(4)-127.0.0.1] c.n.d.DiscoveryClient [DiscoveryClient.java:947] DiscoveryClient_FMS-EVENTS/DESKTOP-1QKKEMV:fms-events:8081 - deregister  status: 200
+2020-05-01 18:15:06,168 INFO [RMI TCP Connection(4)-127.0.0.1] c.n.d.DiscoveryClient [DiscoveryClient.java:934] Completed shut down of DiscoveryClient
+2020-05-01 18:15:29,931 INFO [main] o.s.c.c.c.ConfigServicePropertySourceLocator [ConfigServicePropertySourceLocator.java:249] Fetching config from server at : http://localhost:8888
+2020-05-01 18:15:32,035 INFO [main] o.s.c.c.c.ConfigServicePropertySourceLocator [ConfigServicePropertySourceLocator.java:273] Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
+2020-05-01 18:15:32,038 WARN [main] o.s.c.c.c.ConfigServicePropertySourceLocator [ConfigServicePropertySourceLocator.java:153] Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/fms-events/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+2020-05-01 18:15:32,044 INFO [main] c.f.FmsClientApplication [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2020-05-01 18:15:32,478 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:249] Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-01 18:15:32,478 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
+2020-05-01 18:15:32,526 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 44ms. Found 3 Reactive MongoDB repository interfaces.
+2020-05-01 18:15:32,530 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:249] Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-01 18:15:32,530 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-05-01 18:15:32,535 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 4ms. Found 0 MongoDB repository interfaces.
+2020-05-01 18:15:32,544 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:249] Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-01 18:15:32,545 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-05-01 18:15:32,554 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport [RepositoryConfigurationExtensionSupport.java:348] Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.fms.repository.EventDetailsRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2020-05-01 18:15:32,555 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport [RepositoryConfigurationExtensionSupport.java:348] Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.fms.repository.EventsRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2020-05-01 18:15:32,555 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport [RepositoryConfigurationExtensionSupport.java:348] Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.fms.repository.UserInfoRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2020-05-01 18:15:32,555 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 4ms. Found 0 Redis repository interfaces.
+2020-05-01 18:15:32,729 INFO [main] o.s.c.c.s.GenericScope [GenericScope.java:295] BeanFactory id=7202a5a3-5f8d-3256-b381-3e33f77c43be
+2020-05-01 18:15:32,810 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java:330] Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-01 18:15:32,811 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java:330] Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-01 18:15:32,812 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java:330] Bean 'deferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-01 18:15:32,939 INFO [main] o.m.d.cluster [SLF4JLogger.java:71] Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-05-01 18:15:32,988 INFO [cluster-ClusterId{value='5eac19ec39d59e112f8cab6b', description='null'}-localhost:27017] o.m.d.connection [SLF4JLogger.java:71] Opened connection [connectionId{localValue:1, serverValue:201}] to localhost:27017
+2020-05-01 18:15:32,994 INFO [cluster-ClusterId{value='5eac19ec39d59e112f8cab6b', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:71] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 5]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=3312800}
+2020-05-01 18:15:33,175 WARN [main] o.s.d.m.c.m.BasicMongoPersistentProperty [BasicMongoPersistentProperty.java:86] Customizing field name for id property 'com.fms.model.Events.eventId' is not allowed! Custom name ('eventId') will not be considered!
+2020-05-01 18:15:33,181 WARN [main] o.s.d.m.c.m.BasicMongoPersistentProperty [BasicMongoPersistentProperty.java:86] Customizing field name for id property 'com.fms.model.pocDetails.pocId' is not allowed! Custom name ('pocId') will not be considered!
+2020-05-01 18:15:33,307 INFO [main] o.m.d.cluster [SLF4JLogger.java:71] Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-05-01 18:15:33,313 INFO [cluster-ClusterId{value='5eac19ed39d59e112f8cab6c', description='null'}-localhost:27017] o.m.d.connection [SLF4JLogger.java:71] Opened connection [connectionId{localValue:2, serverValue:202}] to localhost:27017
+2020-05-01 18:15:33,315 INFO [cluster-ClusterId{value='5eac19ed39d59e112f8cab6c', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:71] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 5]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=979200}
+2020-05-01 18:15:33,322 WARN [main] o.s.d.m.c.m.BasicMongoPersistentProperty [BasicMongoPersistentProperty.java:86] Customizing field name for id property 'com.fms.model.pocDetails.pocId' is not allowed! Custom name ('pocId') will not be considered!
+2020-05-01 18:15:33,325 WARN [main] o.s.d.m.c.m.BasicMongoPersistentProperty [BasicMongoPersistentProperty.java:86] Customizing field name for id property 'com.fms.model.Events.eventId' is not allowed! Custom name ('eventId') will not be considered!
+2020-05-01 18:15:33,341 WARN [main] c.n.c.s.URLConfigurationSource [URLConfigurationSource.java:121] No URLs will be polled as dynamic configuration sources.
+2020-05-01 18:15:33,342 INFO [main] c.n.c.s.URLConfigurationSource [URLConfigurationSource.java:122] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-05-01 18:15:33,345 WARN [main] c.n.c.s.URLConfigurationSource [URLConfigurationSource.java:121] No URLs will be polled as dynamic configuration sources.
+2020-05-01 18:15:33,345 INFO [main] c.n.c.s.URLConfigurationSource [URLConfigurationSource.java:122] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-05-01 18:15:33,903 INFO [main] o.m.d.cluster [SLF4JLogger.java:71] Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-05-01 18:15:33,904 INFO [main] o.m.d.cluster [SLF4JLogger.java:71] Adding discovered server localhost:27017 to client view of cluster
+2020-05-01 18:15:33,909 INFO [cluster-ClusterId{value='5eac19ed39d59e112f8cab6d', description='null'}-localhost:27017] o.m.d.connection [SLF4JLogger.java:71] Opened connection [connectionId{localValue:3, serverValue:203}] to localhost:27017
+2020-05-01 18:15:33,910 INFO [cluster-ClusterId{value='5eac19ed39d59e112f8cab6d', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:71] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 5]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=589200}
+2020-05-01 18:15:33,911 INFO [cluster-ClusterId{value='5eac19ed39d59e112f8cab6d', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:71] Discovered cluster type of STANDALONE
+2020-05-01 18:15:33,955 INFO [main] o.m.d.cluster [SLF4JLogger.java:71] Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-05-01 18:15:34,306 INFO [cluster-ClusterId{value='5eac19ed39d59e112f8cab6e', description='null'}-localhost:27017] o.m.d.connection [SLF4JLogger.java:71] Opened connection [connectionId{localValue:4, serverValue:204}] to localhost:27017
+2020-05-01 18:15:34,308 INFO [cluster-ClusterId{value='5eac19ed39d59e112f8cab6e', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:71] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 5]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1582000}
+2020-05-01 18:15:34,899 WARN [main] o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger [BlockingLoadBalancerClientAutoConfiguration.java:86] You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-05-01 18:15:34,907 WARN [main] o.s.c.c.l.r.ReactorLoadBalancerClientAutoConfiguration$ReactorLoadBalancerClientRibbonWarnLogger [ReactorLoadBalancerClientAutoConfiguration.java:77] You have RibbonLoadBalancerClient on your classpath. LoadBalancerExchangeFilterFunction that uses it under the hood will be used by default. Spring Cloud Ribbon is now in maintenance mode, so we suggest switching to ReactorLoadBalancerExchangeFilterFunction instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-05-01 18:15:34,981 INFO [main] o.s.c.n.e.InstanceInfoFactory [InstanceInfoFactory.java:72] Setting initial instance status as: STARTING
+2020-05-01 18:15:35,006 INFO [main] c.n.d.DiscoveryClient [DiscoveryClient.java:368] Initializing Eureka in region us-east-1
+2020-05-01 18:15:35,053 INFO [main] c.n.d.p.DiscoveryJerseyProvider [DiscoveryJerseyProvider.java:70] Using JSON encoding codec LegacyJacksonJson
+2020-05-01 18:15:35,054 INFO [main] c.n.d.p.DiscoveryJerseyProvider [DiscoveryJerseyProvider.java:71] Using JSON decoding codec LegacyJacksonJson
+2020-05-01 18:15:35,166 INFO [main] c.n.d.p.DiscoveryJerseyProvider [DiscoveryJerseyProvider.java:80] Using XML encoding codec XStreamXml
+2020-05-01 18:15:35,167 INFO [main] c.n.d.p.DiscoveryJerseyProvider [DiscoveryJerseyProvider.java:81] Using XML decoding codec XStreamXml
+2020-05-01 18:15:35,341 INFO [main] c.n.d.s.r.a.ConfigClusterResolver [ConfigClusterResolver.java:43] Resolving eureka endpoints via configuration
+2020-05-01 18:15:35,469 INFO [main] c.n.d.DiscoveryClient [DiscoveryClient.java:981] Disable delta property : false
+2020-05-01 18:15:35,469 INFO [main] c.n.d.DiscoveryClient [DiscoveryClient.java:982] Single vip registry refresh property : null
+2020-05-01 18:15:35,469 INFO [main] c.n.d.DiscoveryClient [DiscoveryClient.java:983] Force full registry fetch : false
+2020-05-01 18:15:35,469 INFO [main] c.n.d.DiscoveryClient [DiscoveryClient.java:984] Application is null : false
+2020-05-01 18:15:35,470 INFO [main] c.n.d.DiscoveryClient [DiscoveryClient.java:985] Registered Applications size is zero : true
+2020-05-01 18:15:35,470 INFO [main] c.n.d.DiscoveryClient [DiscoveryClient.java:987] Application version is -1: true
+2020-05-01 18:15:35,470 INFO [main] c.n.d.DiscoveryClient [DiscoveryClient.java:1070] Getting all instance registry info from the eureka server
+2020-05-01 18:15:35,570 INFO [main] c.n.d.DiscoveryClient [DiscoveryClient.java:1079] The response status is 200
+2020-05-01 18:15:35,572 INFO [main] c.n.d.DiscoveryClient [DiscoveryClient.java:1294] Starting heartbeat executor: renew interval is: 30
+2020-05-01 18:15:35,575 INFO [main] c.n.d.InstanceInfoReplicator [InstanceInfoReplicator.java:60] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-05-01 18:15:35,579 INFO [main] c.n.d.DiscoveryClient [DiscoveryClient.java:468] Discovery Client initialized at timestamp 1588337135578 with initial instances count: 2
+2020-05-01 18:15:35,580 INFO [main] o.s.c.n.e.s.EurekaServiceRegistry [EurekaServiceRegistry.java:41] Registering application FMS-EVENTS with eureka with status UP
+2020-05-01 18:15:35,581 INFO [main] c.n.d.DiscoveryClient [DiscoveryClient.java:1330] Saw local status change event StatusChangeEvent [timestamp=1588337135581, current=UP, previous=STARTING]
+2020-05-01 18:15:35,584 INFO [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient [DiscoveryClient.java:847] DiscoveryClient_FMS-EVENTS/DESKTOP-1QKKEMV:fms-events:8081: registering service...
+2020-05-01 18:15:35,621 INFO [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient [DiscoveryClient.java:856] DiscoveryClient_FMS-EVENTS/DESKTOP-1QKKEMV:fms-events:8081 - registration status: 204
+2020-05-01 18:15:35,630 INFO [main] o.s.b.w.e.n.NettyWebServer [NettyWebServer.java:89] Netty started on port(s): 8081
+2020-05-01 18:15:35,632 INFO [main] o.s.c.n.e.s.EurekaAutoServiceRegistration [EurekaAutoServiceRegistration.java:145] Updating port to 8081
+2020-05-01 18:15:35,977 INFO [main] c.f.FmsClientApplication [StartupInfoLogger.java:61] Started FmsClientApplication in 6.908 seconds (JVM running for 7.648)
+2020-05-01 18:18:32,991 INFO [Thread-9] o.m.d.connection [SLF4JLogger.java:71] Opened connection [connectionId{localValue:5, serverValue:205}] to localhost:27017
+2020-05-01 18:20:35,475 INFO [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver [ConfigClusterResolver.java:43] Resolving eureka endpoints via configuration
+2020-05-01 18:25:35,477 INFO [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver [ConfigClusterResolver.java:43] Resolving eureka endpoints via configuration
+2020-05-01 18:30:35,480 INFO [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver [ConfigClusterResolver.java:43] Resolving eureka endpoints via configuration
+2020-05-01 18:35:35,482 INFO [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver [ConfigClusterResolver.java:43] Resolving eureka endpoints via configuration
+2020-05-01 18:40:35,484 INFO [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver [ConfigClusterResolver.java:43] Resolving eureka endpoints via configuration
+2020-05-01 18:45:35,487 INFO [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver [ConfigClusterResolver.java:43] Resolving eureka endpoints via configuration
+2020-05-01 18:47:53,363 ERROR [Thread-9] o.s.b.a.w.r.e.AbstractErrorWebExceptionHandler [CompositeLog.java:122] [8eafdd01-9]  500 Server Error for HTTP GET "/user/userInfo/Sundar123"
+org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "username" : "Sundar123"}, Fields: {}, Sort: {} } returned non unique result.
+	at org.springframework.data.mongodb.core.ReactiveFindOperationSupport$ReactiveFindSupport.lambda$one$2(ReactiveFindOperationSupport.java:145)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	|_ checkpoint ⇢ Handler com.fms.controller.UserInfoController#fetchUserInfo(String) [DispatcherHandler]
+	|_ checkpoint ⇢ HTTP GET "/user/userInfo/Sundar123" [ExceptionHandlingWebHandler]
+Stack trace:
+		at org.springframework.data.mongodb.core.ReactiveFindOperationSupport$ReactiveFindSupport.lambda$one$2(ReactiveFindOperationSupport.java:145)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:118)
+		at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1712)
+		at reactor.core.publisher.MonoCollectList$MonoCollectListSubscriber.onComplete(MonoCollectList.java:121)
+		at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.onComplete(Operators.java:1946)
+		at reactor.core.publisher.MonoFlatMapMany$FlatMapManyInner.onComplete(MonoFlatMapMany.java:252)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:136)
+		at com.mongodb.reactivestreams.client.internal.ObservableToPublisher$1.onComplete(ObservableToPublisher.java:76)
+		at com.mongodb.async.client.AbstractSubscription.onComplete(AbstractSubscription.java:154)
+		at com.mongodb.async.client.AbstractSubscription.processResultsQueue(AbstractSubscription.java:225)
+		at com.mongodb.async.client.AbstractSubscription.tryProcessResultsQueue(AbstractSubscription.java:172)
+		at com.mongodb.async.client.MongoIterableSubscription$2.onResult(MongoIterableSubscription.java:105)
+		at com.mongodb.async.client.MongoIterableSubscription$2.onResult(MongoIterableSubscription.java:89)
+		at com.mongodb.operation.AsyncQueryBatchCursor.next(AsyncQueryBatchCursor.java:174)
+		at com.mongodb.operation.AsyncQueryBatchCursor.next(AsyncQueryBatchCursor.java:118)
+		at com.mongodb.async.client.MongoIterableSubscription.requestMoreData(MongoIterableSubscription.java:89)
+		at com.mongodb.async.client.AbstractSubscription.processResultsQueue(AbstractSubscription.java:227)
+		at com.mongodb.async.client.AbstractSubscription.tryProcessResultsQueue(AbstractSubscription.java:172)
+		at com.mongodb.async.client.MongoIterableSubscription$2.onResult(MongoIterableSubscription.java:105)
+		at com.mongodb.async.client.MongoIterableSubscription$2.onResult(MongoIterableSubscription.java:89)
+		at com.mongodb.operation.AsyncQueryBatchCursor.next(AsyncQueryBatchCursor.java:169)
+		at com.mongodb.operation.AsyncQueryBatchCursor.next(AsyncQueryBatchCursor.java:118)
+		at com.mongodb.async.client.MongoIterableSubscription.requestMoreData(MongoIterableSubscription.java:89)
+		at com.mongodb.async.client.MongoIterableSubscription$1.onResult(MongoIterableSubscription.java:53)
+		at com.mongodb.async.client.MongoIterableSubscription$1.onResult(MongoIterableSubscription.java:46)
+		at com.mongodb.internal.async.ErrorHandlingResultCallback.onResult(ErrorHandlingResultCallback.java:49)
+		at com.mongodb.async.client.OperationExecutorImpl$1$1$1.onResult(OperationExecutorImpl.java:94)
+		at com.mongodb.internal.async.ErrorHandlingResultCallback.onResult(ErrorHandlingResultCallback.java:49)
+		at com.mongodb.operation.FindOperation$3.onResult(FindOperation.java:827)
+		at com.mongodb.operation.OperationHelper$ReferenceCountedReleasingWrappedCallback.onResult(OperationHelper.java:412)
+		at com.mongodb.operation.CommandOperationHelper$10.onResult(CommandOperationHelper.java:481)
+		at com.mongodb.internal.async.ErrorHandlingResultCallback.onResult(ErrorHandlingResultCallback.java:49)
+		at com.mongodb.internal.connection.DefaultServer$DefaultServerProtocolExecutor$2.onResult(DefaultServer.java:245)
+		at com.mongodb.internal.async.ErrorHandlingResultCallback.onResult(ErrorHandlingResultCallback.java:49)
+		at com.mongodb.internal.connection.CommandProtocolImpl$1.onResult(CommandProtocolImpl.java:85)
+		at com.mongodb.internal.connection.DefaultConnectionPool$PooledConnection$1.onResult(DefaultConnectionPool.java:467)
+		at com.mongodb.internal.connection.UsageTrackingInternalConnection$2.onResult(UsageTrackingInternalConnection.java:111)
+		at com.mongodb.internal.async.ErrorHandlingResultCallback.onResult(ErrorHandlingResultCallback.java:49)
+		at com.mongodb.internal.connection.InternalStreamConnection$2$1.onResult(InternalStreamConnection.java:399)
+		at com.mongodb.internal.connection.InternalStreamConnection$2$1.onResult(InternalStreamConnection.java:376)
+		at com.mongodb.internal.connection.InternalStreamConnection$MessageHeaderCallback$MessageCallback.onResult(InternalStreamConnection.java:677)
+		at com.mongodb.internal.connection.InternalStreamConnection$MessageHeaderCallback$MessageCallback.onResult(InternalStreamConnection.java:644)
+		at com.mongodb.internal.connection.InternalStreamConnection$5.completed(InternalStreamConnection.java:514)
+		at com.mongodb.internal.connection.InternalStreamConnection$5.completed(InternalStreamConnection.java:511)
+		at com.mongodb.internal.connection.AsynchronousChannelStream$BasicCompletionHandler.completed(AsynchronousChannelStream.java:220)
+		at com.mongodb.internal.connection.AsynchronousChannelStream$BasicCompletionHandler.completed(AsynchronousChannelStream.java:203)
+		at sun.nio.ch.Invoker.invokeUnchecked(Unknown Source)
+		at sun.nio.ch.Invoker.invokeUnchecked(Unknown Source)
+		at sun.nio.ch.WindowsAsynchronousSocketChannelImpl$ReadTask.completed(Unknown Source)
+		at sun.nio.ch.Iocp$EventHandlerTask.run(Unknown Source)
+		at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(Unknown Source)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+		at java.lang.Thread.run(Unknown Source)
+2020-05-01 18:50:35,489 INFO [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver [ConfigClusterResolver.java:43] Resolving eureka endpoints via configuration
+2020-05-01 18:55:35,491 INFO [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver [ConfigClusterResolver.java:43] Resolving eureka endpoints via configuration
+2020-05-01 18:57:27,836 INFO [main] o.s.c.c.c.ConfigServicePropertySourceLocator [ConfigServicePropertySourceLocator.java:249] Fetching config from server at : http://localhost:8888
+2020-05-01 18:57:29,927 INFO [main] o.s.c.c.c.ConfigServicePropertySourceLocator [ConfigServicePropertySourceLocator.java:273] Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
+2020-05-01 18:57:29,929 WARN [main] o.s.c.c.c.ConfigServicePropertySourceLocator [ConfigServicePropertySourceLocator.java:153] Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/fms-events/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+2020-05-01 18:57:29,931 INFO [main] c.f.FmsClientApplication [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2020-05-01 18:57:30,288 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:249] Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-01 18:57:30,288 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
+2020-05-01 18:57:30,333 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 42ms. Found 3 Reactive MongoDB repository interfaces.
+2020-05-01 18:57:30,337 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:249] Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-01 18:57:30,337 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-05-01 18:57:30,341 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 4ms. Found 0 MongoDB repository interfaces.
+2020-05-01 18:57:30,350 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:249] Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-01 18:57:30,351 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-05-01 18:57:30,361 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport [RepositoryConfigurationExtensionSupport.java:348] Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.fms.repository.EventDetailsRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2020-05-01 18:57:30,361 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport [RepositoryConfigurationExtensionSupport.java:348] Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.fms.repository.EventsRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2020-05-01 18:57:30,362 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport [RepositoryConfigurationExtensionSupport.java:348] Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.fms.repository.UserInfoRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2020-05-01 18:57:30,362 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 4ms. Found 0 Redis repository interfaces.
+2020-05-01 18:57:30,533 INFO [main] o.s.c.c.s.GenericScope [GenericScope.java:295] BeanFactory id=7202a5a3-5f8d-3256-b381-3e33f77c43be
+2020-05-01 18:57:30,618 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java:330] Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-01 18:57:30,619 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java:330] Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-01 18:57:30,621 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java:330] Bean 'deferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-01 18:57:30,729 INFO [main] o.m.d.cluster [SLF4JLogger.java:71] Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-05-01 18:57:30,776 INFO [cluster-ClusterId{value='5eac23c2ae6ca06a5e080f80', description='null'}-localhost:27017] o.m.d.connection [SLF4JLogger.java:71] Opened connection [connectionId{localValue:1, serverValue:220}] to localhost:27017
+2020-05-01 18:57:30,781 INFO [cluster-ClusterId{value='5eac23c2ae6ca06a5e080f80', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:71] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 5]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2641000}
+2020-05-01 18:57:30,968 WARN [main] o.s.d.m.c.m.BasicMongoPersistentProperty [BasicMongoPersistentProperty.java:86] Customizing field name for id property 'com.fms.model.Events.eventId' is not allowed! Custom name ('eventId') will not be considered!
+2020-05-01 18:57:30,974 WARN [main] o.s.d.m.c.m.BasicMongoPersistentProperty [BasicMongoPersistentProperty.java:86] Customizing field name for id property 'com.fms.model.pocDetails.pocId' is not allowed! Custom name ('pocId') will not be considered!
+2020-05-01 18:57:31,099 INFO [main] o.m.d.cluster [SLF4JLogger.java:71] Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-05-01 18:57:31,105 INFO [cluster-ClusterId{value='5eac23c3ae6ca06a5e080f81', description='null'}-localhost:27017] o.m.d.connection [SLF4JLogger.java:71] Opened connection [connectionId{localValue:2, serverValue:221}] to localhost:27017
+2020-05-01 18:57:31,106 INFO [cluster-ClusterId{value='5eac23c3ae6ca06a5e080f81', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:71] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 5]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=966000}
+2020-05-01 18:57:31,115 WARN [main] o.s.d.m.c.m.BasicMongoPersistentProperty [BasicMongoPersistentProperty.java:86] Customizing field name for id property 'com.fms.model.pocDetails.pocId' is not allowed! Custom name ('pocId') will not be considered!
+2020-05-01 18:57:31,122 WARN [main] o.s.d.m.c.m.BasicMongoPersistentProperty [BasicMongoPersistentProperty.java:86] Customizing field name for id property 'com.fms.model.Events.eventId' is not allowed! Custom name ('eventId') will not be considered!
+2020-05-01 18:57:31,135 WARN [main] c.n.c.s.URLConfigurationSource [URLConfigurationSource.java:121] No URLs will be polled as dynamic configuration sources.
+2020-05-01 18:57:31,135 INFO [main] c.n.c.s.URLConfigurationSource [URLConfigurationSource.java:122] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-05-01 18:57:31,139 WARN [main] c.n.c.s.URLConfigurationSource [URLConfigurationSource.java:121] No URLs will be polled as dynamic configuration sources.
+2020-05-01 18:57:31,139 INFO [main] c.n.c.s.URLConfigurationSource [URLConfigurationSource.java:122] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-05-01 18:57:31,681 INFO [main] o.m.d.cluster [SLF4JLogger.java:71] Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-05-01 18:57:31,682 INFO [main] o.m.d.cluster [SLF4JLogger.java:71] Adding discovered server localhost:27017 to client view of cluster
+2020-05-01 18:57:31,688 INFO [cluster-ClusterId{value='5eac23c3ae6ca06a5e080f82', description='null'}-localhost:27017] o.m.d.connection [SLF4JLogger.java:71] Opened connection [connectionId{localValue:3, serverValue:222}] to localhost:27017
+2020-05-01 18:57:31,689 INFO [cluster-ClusterId{value='5eac23c3ae6ca06a5e080f82', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:71] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 5]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=492800}
+2020-05-01 18:57:31,690 INFO [cluster-ClusterId{value='5eac23c3ae6ca06a5e080f82', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:71] Discovered cluster type of STANDALONE
+2020-05-01 18:57:31,734 INFO [main] o.m.d.cluster [SLF4JLogger.java:71] Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-05-01 18:57:32,100 INFO [cluster-ClusterId{value='5eac23c3ae6ca06a5e080f83', description='null'}-localhost:27017] o.m.d.connection [SLF4JLogger.java:71] Opened connection [connectionId{localValue:4, serverValue:223}] to localhost:27017
+2020-05-01 18:57:32,102 INFO [cluster-ClusterId{value='5eac23c3ae6ca06a5e080f83', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:71] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 5]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1834400}
+2020-05-01 18:57:32,676 WARN [main] o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger [BlockingLoadBalancerClientAutoConfiguration.java:86] You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-05-01 18:57:32,686 WARN [main] o.s.c.c.l.r.ReactorLoadBalancerClientAutoConfiguration$ReactorLoadBalancerClientRibbonWarnLogger [ReactorLoadBalancerClientAutoConfiguration.java:77] You have RibbonLoadBalancerClient on your classpath. LoadBalancerExchangeFilterFunction that uses it under the hood will be used by default. Spring Cloud Ribbon is now in maintenance mode, so we suggest switching to ReactorLoadBalancerExchangeFilterFunction instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-05-01 18:57:32,760 INFO [main] o.s.c.n.e.InstanceInfoFactory [InstanceInfoFactory.java:72] Setting initial instance status as: STARTING
+2020-05-01 18:57:32,786 INFO [main] c.n.d.DiscoveryClient [DiscoveryClient.java:368] Initializing Eureka in region us-east-1
+2020-05-01 18:57:32,836 INFO [main] c.n.d.p.DiscoveryJerseyProvider [DiscoveryJerseyProvider.java:70] Using JSON encoding codec LegacyJacksonJson
+2020-05-01 18:57:32,836 INFO [main] c.n.d.p.DiscoveryJerseyProvider [DiscoveryJerseyProvider.java:71] Using JSON decoding codec LegacyJacksonJson
+2020-05-01 18:57:32,929 INFO [main] c.n.d.p.DiscoveryJerseyProvider [DiscoveryJerseyProvider.java:80] Using XML encoding codec XStreamXml
+2020-05-01 18:57:32,929 INFO [main] c.n.d.p.DiscoveryJerseyProvider [DiscoveryJerseyProvider.java:81] Using XML decoding codec XStreamXml
+2020-05-01 18:57:33,115 INFO [main] c.n.d.s.r.a.ConfigClusterResolver [ConfigClusterResolver.java:43] Resolving eureka endpoints via configuration
+2020-05-01 18:57:33,243 INFO [main] c.n.d.DiscoveryClient [DiscoveryClient.java:981] Disable delta property : false
+2020-05-01 18:57:33,243 INFO [main] c.n.d.DiscoveryClient [DiscoveryClient.java:982] Single vip registry refresh property : null
+2020-05-01 18:57:33,244 INFO [main] c.n.d.DiscoveryClient [DiscoveryClient.java:983] Force full registry fetch : false
+2020-05-01 18:57:33,244 INFO [main] c.n.d.DiscoveryClient [DiscoveryClient.java:984] Application is null : false
+2020-05-01 18:57:33,244 INFO [main] c.n.d.DiscoveryClient [DiscoveryClient.java:985] Registered Applications size is zero : true
+2020-05-01 18:57:33,244 INFO [main] c.n.d.DiscoveryClient [DiscoveryClient.java:987] Application version is -1: true
+2020-05-01 18:57:33,244 INFO [main] c.n.d.DiscoveryClient [DiscoveryClient.java:1070] Getting all instance registry info from the eureka server
+2020-05-01 18:57:33,368 INFO [main] c.n.d.DiscoveryClient [DiscoveryClient.java:1079] The response status is 200
+2020-05-01 18:57:33,371 INFO [main] c.n.d.DiscoveryClient [DiscoveryClient.java:1294] Starting heartbeat executor: renew interval is: 30
+2020-05-01 18:57:33,377 INFO [main] c.n.d.InstanceInfoReplicator [InstanceInfoReplicator.java:60] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-05-01 18:57:33,382 INFO [main] c.n.d.DiscoveryClient [DiscoveryClient.java:468] Discovery Client initialized at timestamp 1588339653381 with initial instances count: 3
+2020-05-01 18:57:33,383 INFO [main] o.s.c.n.e.s.EurekaServiceRegistry [EurekaServiceRegistry.java:41] Registering application FMS-EVENTS with eureka with status UP
+2020-05-01 18:57:33,384 INFO [main] c.n.d.DiscoveryClient [DiscoveryClient.java:1330] Saw local status change event StatusChangeEvent [timestamp=1588339653384, current=UP, previous=STARTING]
+2020-05-01 18:57:33,387 INFO [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient [DiscoveryClient.java:847] DiscoveryClient_FMS-EVENTS/DESKTOP-1QKKEMV:fms-events:8081: registering service...
+2020-05-01 18:57:33,420 INFO [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient [DiscoveryClient.java:856] DiscoveryClient_FMS-EVENTS/DESKTOP-1QKKEMV:fms-events:8081 - registration status: 204
+2020-05-01 18:57:33,429 INFO [main] o.s.b.w.e.n.NettyWebServer [NettyWebServer.java:89] Netty started on port(s): 8081
+2020-05-01 18:57:33,431 INFO [main] o.s.c.n.e.s.EurekaAutoServiceRegistration [EurekaAutoServiceRegistration.java:145] Updating port to 8081
+2020-05-01 18:57:33,811 INFO [main] c.f.FmsClientApplication [StartupInfoLogger.java:61] Started FmsClientApplication in 6.844 seconds (JVM running for 7.595)
+2020-05-01 18:57:56,575 INFO [Thread-8] o.m.d.connection [SLF4JLogger.java:71] Opened connection [connectionId{localValue:5, serverValue:224}] to localhost:27017
+2020-05-01 19:02:33,247 INFO [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver [ConfigClusterResolver.java:43] Resolving eureka endpoints via configuration
+2020-05-01 19:07:33,249 INFO [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver [ConfigClusterResolver.java:43] Resolving eureka endpoints via configuration
+2020-05-01 19:12:33,252 INFO [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver [ConfigClusterResolver.java:43] Resolving eureka endpoints via configuration
+2020-05-01 19:17:33,255 INFO [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver [ConfigClusterResolver.java:43] Resolving eureka endpoints via configuration
+2020-05-01 19:22:33,258 INFO [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver [ConfigClusterResolver.java:43] Resolving eureka endpoints via configuration
+2020-05-01 19:27:33,261 INFO [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver [ConfigClusterResolver.java:43] Resolving eureka endpoints via configuration
+2020-05-01 19:32:33,263 INFO [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver [ConfigClusterResolver.java:43] Resolving eureka endpoints via configuration
+2020-05-01 19:34:07,357 INFO [main] o.s.c.c.c.ConfigServicePropertySourceLocator [ConfigServicePropertySourceLocator.java:249] Fetching config from server at : http://localhost:8888
+2020-05-01 19:34:09,434 INFO [main] o.s.c.c.c.ConfigServicePropertySourceLocator [ConfigServicePropertySourceLocator.java:273] Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
+2020-05-01 19:34:09,435 WARN [main] o.s.c.c.c.ConfigServicePropertySourceLocator [ConfigServicePropertySourceLocator.java:153] Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/fms-events/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+2020-05-01 19:34:09,436 INFO [main] c.f.FmsClientApplication [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2020-05-01 19:34:09,789 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:249] Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-01 19:34:09,790 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
+2020-05-01 19:34:09,835 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 41ms. Found 3 Reactive MongoDB repository interfaces.
+2020-05-01 19:34:09,839 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:249] Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-01 19:34:09,839 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-05-01 19:34:09,844 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 4ms. Found 0 MongoDB repository interfaces.
+2020-05-01 19:34:09,851 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:249] Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-01 19:34:09,852 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-05-01 19:34:09,862 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport [RepositoryConfigurationExtensionSupport.java:348] Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.fms.repository.EventDetailsRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2020-05-01 19:34:09,862 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport [RepositoryConfigurationExtensionSupport.java:348] Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.fms.repository.EventsRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2020-05-01 19:34:09,863 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport [RepositoryConfigurationExtensionSupport.java:348] Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.fms.repository.UserInfoRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2020-05-01 19:34:09,863 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 4ms. Found 0 Redis repository interfaces.
+2020-05-01 19:34:10,034 INFO [main] o.s.c.c.s.GenericScope [GenericScope.java:295] BeanFactory id=7202a5a3-5f8d-3256-b381-3e33f77c43be
+2020-05-01 19:34:10,114 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java:330] Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-01 19:34:10,115 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java:330] Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-01 19:34:10,116 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java:330] Bean 'deferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-01 19:34:10,224 INFO [main] o.m.d.cluster [SLF4JLogger.java:71] Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-05-01 19:34:10,274 INFO [cluster-ClusterId{value='5eac2c5af58042663dbf018a', description='null'}-localhost:27017] o.m.d.connection [SLF4JLogger.java:71] Opened connection [connectionId{localValue:1, serverValue:238}] to localhost:27017
+2020-05-01 19:34:10,278 INFO [cluster-ClusterId{value='5eac2c5af58042663dbf018a', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:71] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 5]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2638100}
+2020-05-01 19:34:10,464 WARN [main] o.s.d.m.c.m.BasicMongoPersistentProperty [BasicMongoPersistentProperty.java:86] Customizing field name for id property 'com.fms.model.Events.eventId' is not allowed! Custom name ('eventId') will not be considered!
+2020-05-01 19:34:10,471 WARN [main] o.s.d.m.c.m.BasicMongoPersistentProperty [BasicMongoPersistentProperty.java:86] Customizing field name for id property 'com.fms.model.pocDetails.pocId' is not allowed! Custom name ('pocId') will not be considered!
+2020-05-01 19:34:10,597 INFO [main] o.m.d.cluster [SLF4JLogger.java:71] Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-05-01 19:34:10,604 INFO [cluster-ClusterId{value='5eac2c5af58042663dbf018b', description='null'}-localhost:27017] o.m.d.connection [SLF4JLogger.java:71] Opened connection [connectionId{localValue:2, serverValue:239}] to localhost:27017
+2020-05-01 19:34:10,605 INFO [cluster-ClusterId{value='5eac2c5af58042663dbf018b', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:71] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 5]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1020700}
+2020-05-01 19:34:10,613 WARN [main] o.s.d.m.c.m.BasicMongoPersistentProperty [BasicMongoPersistentProperty.java:86] Customizing field name for id property 'com.fms.model.Events.eventId' is not allowed! Custom name ('eventId') will not be considered!
+2020-05-01 19:34:10,615 WARN [main] o.s.d.m.c.m.BasicMongoPersistentProperty [BasicMongoPersistentProperty.java:86] Customizing field name for id property 'com.fms.model.pocDetails.pocId' is not allowed! Custom name ('pocId') will not be considered!
+2020-05-01 19:34:10,633 WARN [main] c.n.c.s.URLConfigurationSource [URLConfigurationSource.java:121] No URLs will be polled as dynamic configuration sources.
+2020-05-01 19:34:10,634 INFO [main] c.n.c.s.URLConfigurationSource [URLConfigurationSource.java:122] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-05-01 19:34:10,637 WARN [main] c.n.c.s.URLConfigurationSource [URLConfigurationSource.java:121] No URLs will be polled as dynamic configuration sources.
+2020-05-01 19:34:10,637 INFO [main] c.n.c.s.URLConfigurationSource [URLConfigurationSource.java:122] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-05-01 19:34:11,190 INFO [main] o.m.d.cluster [SLF4JLogger.java:71] Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-05-01 19:34:11,190 INFO [main] o.m.d.cluster [SLF4JLogger.java:71] Adding discovered server localhost:27017 to client view of cluster
+2020-05-01 19:34:11,196 INFO [cluster-ClusterId{value='5eac2c5bf58042663dbf018c', description='null'}-localhost:27017] o.m.d.connection [SLF4JLogger.java:71] Opened connection [connectionId{localValue:3, serverValue:240}] to localhost:27017
+2020-05-01 19:34:11,197 INFO [cluster-ClusterId{value='5eac2c5bf58042663dbf018c', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:71] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 5]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=508800}
+2020-05-01 19:34:11,197 INFO [cluster-ClusterId{value='5eac2c5bf58042663dbf018c', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:71] Discovered cluster type of STANDALONE
+2020-05-01 19:34:11,241 INFO [main] o.m.d.cluster [SLF4JLogger.java:71] Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-05-01 19:34:11,573 INFO [cluster-ClusterId{value='5eac2c5bf58042663dbf018d', description='null'}-localhost:27017] o.m.d.connection [SLF4JLogger.java:71] Opened connection [connectionId{localValue:4, serverValue:241}] to localhost:27017
+2020-05-01 19:34:11,575 INFO [cluster-ClusterId{value='5eac2c5bf58042663dbf018d', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:71] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 5]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1999500}
+2020-05-01 19:34:12,148 WARN [main] o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger [BlockingLoadBalancerClientAutoConfiguration.java:86] You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-05-01 19:34:12,157 WARN [main] o.s.c.c.l.r.ReactorLoadBalancerClientAutoConfiguration$ReactorLoadBalancerClientRibbonWarnLogger [ReactorLoadBalancerClientAutoConfiguration.java:77] You have RibbonLoadBalancerClient on your classpath. LoadBalancerExchangeFilterFunction that uses it under the hood will be used by default. Spring Cloud Ribbon is now in maintenance mode, so we suggest switching to ReactorLoadBalancerExchangeFilterFunction instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-05-01 19:34:12,230 INFO [main] o.s.c.n.e.InstanceInfoFactory [InstanceInfoFactory.java:72] Setting initial instance status as: STARTING
+2020-05-01 19:34:12,257 INFO [main] c.n.d.DiscoveryClient [DiscoveryClient.java:368] Initializing Eureka in region us-east-1
+2020-05-01 19:34:12,308 INFO [main] c.n.d.p.DiscoveryJerseyProvider [DiscoveryJerseyProvider.java:70] Using JSON encoding codec LegacyJacksonJson
+2020-05-01 19:34:12,308 INFO [main] c.n.d.p.DiscoveryJerseyProvider [DiscoveryJerseyProvider.java:71] Using JSON decoding codec LegacyJacksonJson
+2020-05-01 19:34:12,403 INFO [main] c.n.d.p.DiscoveryJerseyProvider [DiscoveryJerseyProvider.java:80] Using XML encoding codec XStreamXml
+2020-05-01 19:34:12,403 INFO [main] c.n.d.p.DiscoveryJerseyProvider [DiscoveryJerseyProvider.java:81] Using XML decoding codec XStreamXml
+2020-05-01 19:34:12,581 INFO [main] c.n.d.s.r.a.ConfigClusterResolver [ConfigClusterResolver.java:43] Resolving eureka endpoints via configuration
+2020-05-01 19:34:12,705 INFO [main] c.n.d.DiscoveryClient [DiscoveryClient.java:981] Disable delta property : false
+2020-05-01 19:34:12,705 INFO [main] c.n.d.DiscoveryClient [DiscoveryClient.java:982] Single vip registry refresh property : null
+2020-05-01 19:34:12,705 INFO [main] c.n.d.DiscoveryClient [DiscoveryClient.java:983] Force full registry fetch : false
+2020-05-01 19:34:12,705 INFO [main] c.n.d.DiscoveryClient [DiscoveryClient.java:984] Application is null : false
+2020-05-01 19:34:12,705 INFO [main] c.n.d.DiscoveryClient [DiscoveryClient.java:985] Registered Applications size is zero : true
+2020-05-01 19:34:12,705 INFO [main] c.n.d.DiscoveryClient [DiscoveryClient.java:987] Application version is -1: true
+2020-05-01 19:34:12,706 INFO [main] c.n.d.DiscoveryClient [DiscoveryClient.java:1070] Getting all instance registry info from the eureka server
+2020-05-01 19:34:12,805 INFO [main] c.n.d.DiscoveryClient [DiscoveryClient.java:1079] The response status is 200
+2020-05-01 19:34:12,808 INFO [main] c.n.d.DiscoveryClient [DiscoveryClient.java:1294] Starting heartbeat executor: renew interval is: 30
+2020-05-01 19:34:12,811 INFO [main] c.n.d.InstanceInfoReplicator [InstanceInfoReplicator.java:60] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-05-01 19:34:12,815 INFO [main] c.n.d.DiscoveryClient [DiscoveryClient.java:468] Discovery Client initialized at timestamp 1588341852814 with initial instances count: 3
+2020-05-01 19:34:12,816 INFO [main] o.s.c.n.e.s.EurekaServiceRegistry [EurekaServiceRegistry.java:41] Registering application FMS-EVENTS with eureka with status UP
+2020-05-01 19:34:12,816 INFO [main] c.n.d.DiscoveryClient [DiscoveryClient.java:1330] Saw local status change event StatusChangeEvent [timestamp=1588341852816, current=UP, previous=STARTING]
+2020-05-01 19:34:12,819 INFO [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient [DiscoveryClient.java:847] DiscoveryClient_FMS-EVENTS/DESKTOP-1QKKEMV:fms-events:8081: registering service...
+2020-05-01 19:34:12,850 INFO [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient [DiscoveryClient.java:856] DiscoveryClient_FMS-EVENTS/DESKTOP-1QKKEMV:fms-events:8081 - registration status: 204
+2020-05-01 19:34:12,858 INFO [main] o.s.b.w.e.n.NettyWebServer [NettyWebServer.java:89] Netty started on port(s): 8081
+2020-05-01 19:34:12,860 INFO [main] o.s.c.n.e.s.EurekaAutoServiceRegistration [EurekaAutoServiceRegistration.java:145] Updating port to 8081
+2020-05-01 19:34:13,257 INFO [main] c.f.FmsClientApplication [StartupInfoLogger.java:61] Started FmsClientApplication in 6.742 seconds (JVM running for 7.492)
+2020-05-01 19:34:20,342 INFO [Thread-9] o.m.d.connection [SLF4JLogger.java:71] Opened connection [connectionId{localValue:5, serverValue:242}] to localhost:27017
+2020-05-01 19:39:12,709 INFO [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver [ConfigClusterResolver.java:43] Resolving eureka endpoints via configuration
+2020-05-01 19:44:12,711 INFO [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver [ConfigClusterResolver.java:43] Resolving eureka endpoints via configuration
+2020-05-01 19:44:42,951 ERROR [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RedirectingEurekaHttpClient [RedirectingEurekaHttpClient.java:91] Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}
+com.sun.jersey.api.client.ClientHandlerException: org.apache.http.NoHttpResponseException: localhost:8761 failed to respond
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
+	at com.sun.jersey.api.client.Client.handle(Client.java:652)
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682)
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
+	at com.sun.jersey.api.client.WebResource$Builder.put(WebResource.java:529)
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.sendHeartBeat(AbstractJerseyEurekaHttpClient.java:103)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:867)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1436)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.http.NoHttpResponseException: localhost:8761 failed to respond
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:141)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.AbstractHttpClientConnection.receiveResponseHeader(AbstractHttpClientConnection.java:294)
+	at org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:257)
+	at org.apache.http.impl.conn.AbstractClientConnAdapter.receiveResponseHeader(AbstractClientConnAdapter.java:230)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:679)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:481)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
+	... 26 common frames omitted
+2020-05-01 19:44:42,952 WARN [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient [RetryableEurekaHttpClient.java:130] Request execution failed with message: org.apache.http.NoHttpResponseException: localhost:8761 failed to respond
+2020-05-01 19:44:42,955 INFO [DiscoveryClient-CacheRefreshExecutor-0] o.a.h.i.c.DefaultHttpClient [DefaultRequestDirector.java:690] I/O exception (java.net.SocketException) caught when processing request to {}->http://localhost:8761: Connection reset
+2020-05-01 19:44:42,955 INFO [DiscoveryClient-CacheRefreshExecutor-0] o.a.h.i.c.DefaultHttpClient [DefaultRequestDirector.java:700] Retrying request to {}->http://localhost:8761
+2020-05-01 19:44:42,955 ERROR [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RedirectingEurekaHttpClient [RedirectingEurekaHttpClient.java:83] Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}
+com.sun.jersey.api.client.ClientHandlerException: java.net.SocketException: Connection reset
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
+	at com.sun.jersey.api.client.Client.handle(Client.java:652)
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682)
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
+	at com.sun.jersey.api.client.WebResource$Builder.put(WebResource.java:529)
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.sendHeartBeat(AbstractJerseyEurekaHttpClient.java:103)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:867)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1436)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at org.apache.http.impl.io.AbstractSessionInputBuffer.fillBuffer(AbstractSessionInputBuffer.java:161)
+	at org.apache.http.impl.io.SocketInputBuffer.fillBuffer(SocketInputBuffer.java:82)
+	at org.apache.http.impl.io.AbstractSessionInputBuffer.readLine(AbstractSessionInputBuffer.java:276)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.AbstractHttpClientConnection.receiveResponseHeader(AbstractHttpClientConnection.java:294)
+	at org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:257)
+	at org.apache.http.impl.conn.AbstractClientConnAdapter.receiveResponseHeader(AbstractClientConnAdapter.java:230)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:679)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:481)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
+	... 27 common frames omitted
+2020-05-01 19:44:42,956 WARN [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient [RetryableEurekaHttpClient.java:130] Request execution failed with message: java.net.SocketException: Connection reset
+2020-05-01 19:44:42,957 ERROR [DiscoveryClient-HeartbeatExecutor-0] c.n.d.DiscoveryClient [DiscoveryClient.java:881] DiscoveryClient_FMS-EVENTS/DESKTOP-1QKKEMV:fms-events:8081 - was unable to send heartbeat!
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:867)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1436)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+2020-05-01 19:44:46,983 ERROR [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.s.t.d.RedirectingEurekaHttpClient [RedirectingEurekaHttpClient.java:91] Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused: connect
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
+	at com.sun.jersey.api.client.Client.handle(Client.java:652)
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682)
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
+	at com.sun.jersey.api.client.WebResource$Builder.get(WebResource.java:509)
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getApplicationsInternal(AbstractJerseyEurekaHttpClient.java:196)
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getDelta(AbstractJerseyEurekaHttpClient.java:172)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1108)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:990)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1510)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1477)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:668)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:481)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
+	... 29 common frames omitted
+2020-05-01 19:44:46,984 WARN [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient [RetryableEurekaHttpClient.java:130] Request execution failed with message: java.net.ConnectException: Connection refused: connect
+2020-05-01 19:44:51,004 ERROR [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.s.t.d.RedirectingEurekaHttpClient [RedirectingEurekaHttpClient.java:83] Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused: connect
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
+	at com.sun.jersey.api.client.Client.handle(Client.java:652)
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682)
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
+	at com.sun.jersey.api.client.WebResource$Builder.get(WebResource.java:509)
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getApplicationsInternal(AbstractJerseyEurekaHttpClient.java:196)
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getDelta(AbstractJerseyEurekaHttpClient.java:172)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1108)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:990)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1510)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1477)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
+	... 30 common frames omitted
+2020-05-01 19:44:51,005 WARN [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient [RetryableEurekaHttpClient.java:130] Request execution failed with message: java.net.ConnectException: Connection refused: connect
+2020-05-01 19:44:51,006 ERROR [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.DiscoveryClient [DiscoveryClient.java:995] DiscoveryClient_FMS-EVENTS/DESKTOP-1QKKEMV:fms-events:8081 - was unable to refresh its cache! status = Cannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1108)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:990)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1510)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1477)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+2020-05-01 19:45:16,964 ERROR [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RedirectingEurekaHttpClient [RedirectingEurekaHttpClient.java:83] Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused: connect
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
+	at com.sun.jersey.api.client.Client.handle(Client.java:652)
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682)
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
+	at com.sun.jersey.api.client.WebResource$Builder.put(WebResource.java:529)
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.sendHeartBeat(AbstractJerseyEurekaHttpClient.java:103)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:867)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1436)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
+	... 27 common frames omitted
+2020-05-01 19:45:16,964 WARN [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient [RetryableEurekaHttpClient.java:130] Request execution failed with message: java.net.ConnectException: Connection refused: connect
+2020-05-01 19:45:16,965 ERROR [DiscoveryClient-HeartbeatExecutor-0] c.n.d.DiscoveryClient [DiscoveryClient.java:881] DiscoveryClient_FMS-EVENTS/DESKTOP-1QKKEMV:fms-events:8081 - was unable to send heartbeat!
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:867)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1436)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+2020-05-01 19:45:25,029 ERROR [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.s.t.d.RedirectingEurekaHttpClient [RedirectingEurekaHttpClient.java:83] Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused: connect
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
+	at com.sun.jersey.api.client.Client.handle(Client.java:652)
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682)
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
+	at com.sun.jersey.api.client.WebResource$Builder.get(WebResource.java:509)
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getApplicationsInternal(AbstractJerseyEurekaHttpClient.java:196)
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getDelta(AbstractJerseyEurekaHttpClient.java:172)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1108)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:990)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1510)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1477)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
+	... 30 common frames omitted
+2020-05-01 19:45:25,030 WARN [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient [RetryableEurekaHttpClient.java:130] Request execution failed with message: java.net.ConnectException: Connection refused: connect
+2020-05-01 19:45:25,030 ERROR [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.DiscoveryClient [DiscoveryClient.java:995] DiscoveryClient_FMS-EVENTS/DESKTOP-1QKKEMV:fms-events:8081 - was unable to refresh its cache! status = Cannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1108)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:990)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1510)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1477)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+2020-05-01 19:45:50,985 ERROR [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RedirectingEurekaHttpClient [RedirectingEurekaHttpClient.java:83] Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused: connect
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
+	at com.sun.jersey.api.client.Client.handle(Client.java:652)
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682)
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
+	at com.sun.jersey.api.client.WebResource$Builder.put(WebResource.java:529)
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.sendHeartBeat(AbstractJerseyEurekaHttpClient.java:103)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:867)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1436)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
+	... 27 common frames omitted
+2020-05-01 19:45:50,986 WARN [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient [RetryableEurekaHttpClient.java:130] Request execution failed with message: java.net.ConnectException: Connection refused: connect
+2020-05-01 19:45:50,987 ERROR [DiscoveryClient-HeartbeatExecutor-0] c.n.d.DiscoveryClient [DiscoveryClient.java:881] DiscoveryClient_FMS-EVENTS/DESKTOP-1QKKEMV:fms-events:8081 - was unable to send heartbeat!
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:867)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1436)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+2020-05-01 19:45:59,049 ERROR [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.s.t.d.RedirectingEurekaHttpClient [RedirectingEurekaHttpClient.java:83] Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused: connect
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
+	at com.sun.jersey.api.client.Client.handle(Client.java:652)
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682)
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
+	at com.sun.jersey.api.client.WebResource$Builder.get(WebResource.java:509)
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getApplicationsInternal(AbstractJerseyEurekaHttpClient.java:196)
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getDelta(AbstractJerseyEurekaHttpClient.java:172)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1108)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:990)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1510)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1477)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
+	... 30 common frames omitted
+2020-05-01 19:45:59,050 WARN [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient [RetryableEurekaHttpClient.java:130] Request execution failed with message: java.net.ConnectException: Connection refused: connect
+2020-05-01 19:45:59,051 ERROR [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.DiscoveryClient [DiscoveryClient.java:995] DiscoveryClient_FMS-EVENTS/DESKTOP-1QKKEMV:fms-events:8081 - was unable to refresh its cache! status = Cannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1108)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:990)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1510)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1477)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+2020-05-01 19:46:21,050 INFO [DiscoveryClient-HeartbeatExecutor-0] c.n.d.DiscoveryClient [DiscoveryClient.java:871] DiscoveryClient_FMS-EVENTS/DESKTOP-1QKKEMV:fms-events:8081 - Re-registering apps/FMS-EVENTS
+2020-05-01 19:46:21,050 INFO [DiscoveryClient-HeartbeatExecutor-0] c.n.d.DiscoveryClient [DiscoveryClient.java:847] DiscoveryClient_FMS-EVENTS/DESKTOP-1QKKEMV:fms-events:8081: registering service...
+2020-05-01 19:46:21,079 INFO [DiscoveryClient-HeartbeatExecutor-0] c.n.d.DiscoveryClient [DiscoveryClient.java:856] DiscoveryClient_FMS-EVENTS/DESKTOP-1QKKEMV:fms-events:8081 - registration status: 204
+2020-05-01 19:49:12,712 INFO [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver [ConfigClusterResolver.java:43] Resolving eureka endpoints via configuration
+2020-05-01 19:54:12,715 INFO [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver [ConfigClusterResolver.java:43] Resolving eureka endpoints via configuration
+2020-05-01 19:59:12,717 INFO [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver [ConfigClusterResolver.java:43] Resolving eureka endpoints via configuration
+2020-05-01 20:04:12,720 INFO [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver [ConfigClusterResolver.java:43] Resolving eureka endpoints via configuration
+2020-05-01 20:09:12,722 INFO [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver [ConfigClusterResolver.java:43] Resolving eureka endpoints via configuration
+2020-05-01 20:14:11,369 INFO [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver [ConfigClusterResolver.java:43] Resolving eureka endpoints via configuration
+2020-05-01 20:19:11,371 INFO [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver [ConfigClusterResolver.java:43] Resolving eureka endpoints via configuration
+2020-05-01 20:24:11,374 INFO [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver [ConfigClusterResolver.java:43] Resolving eureka endpoints via configuration
